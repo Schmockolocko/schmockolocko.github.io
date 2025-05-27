@@ -2,28 +2,35 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Wichtige Seite</title>
+  <title>Bitte warten...</title>
   <style>
     body {
+      margin: 0;
       background-color: black;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
+    }
+
+    video {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
 <body>
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=1"
-    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-  </iframe>
+
+  <video autoplay muted playsinline>
+    <source src="media/rickroll.mp4" type="video/mp4">
+    Dein Browser unterstützt das Video-Tag nicht.
+  </video>
 
   <script>
     setTimeout(function () {
-      window.location.href = "https://drive.google.com/drive/folders/1lAf3PhOVEyiTMae0Nwj7jbRYsNZ70LVD?usp=sharing";
-    }, 5000); // 5 Sekunden warten
+      window.location.href = "https://deine-zielseite.de";
+    }, 5000); // Nach 5 Sekunden weiterleiten
   </script>
+
 </body>
 </html>
